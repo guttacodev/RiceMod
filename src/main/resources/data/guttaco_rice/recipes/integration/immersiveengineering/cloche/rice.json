@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "results": [
+    {
+      "item": "guttaco_rice:rice",
+      "count": 2
+    },
+    {
+      "item": "guttaco_rice:rice_seeds"
+    }
+  ],
+  "input": {
+    "item": "guttaco_rice:rice_seeds"
+  },
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 640,
+  "render": {
+    "type": "crop",
+    "block": "guttaco_rice:rice_plant"
+  }
+}

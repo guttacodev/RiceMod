@@ -1,0 +1,11 @@
+{
+  "item.guttaco_rice.rice_seeds": "Rice Seeds",
+  "item.guttaco_rice.rice": "Rice",
+  "item.guttaco_rice.bowl_of_rice": "Bowl of Rice",
+  "item.guttaco_rice.cooked_rice": "Cooked Rice",
+
+  "itemGroup.guttaco_ricetab": "Rice Mod",
+
+  "block.guttaco_rice.wild_rice": "Wild Rice",
+  "block.guttaco_rice.rice_plant": "Rice"
+}

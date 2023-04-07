@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:crops/rice"
+  },
+  "result": "guttaco_rice:cooked_rice",
+  "experience": 0.35,
+  "cookingtime": 200
+}

@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "guttaco_rice:rice_seeds"
+  },
+  "result": [
+    {
+      "item": "guttaco_rice:rice",
+      "chance": 2.0
+    },
+    {
+      "item": "guttaco_rice:rice_seeds",
+      "chance": 1.1
+    }
+  ],
+  "water_mod": 0.5
+}

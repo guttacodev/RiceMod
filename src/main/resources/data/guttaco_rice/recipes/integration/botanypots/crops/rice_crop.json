@@ -1,0 +1,40 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "guttaco_rice:rice_seeds"
+  },
+  "categories": ["dirt"],
+  "growthTicks": 1000,
+  "display": {
+    "block": "guttaco_rice:rice_plant",
+    "properties": {
+      "age": 3
+    }
+  },
+  "results": [
+    {
+      "chance": 0.75,
+      "output": {
+        "item": "guttaco_rice:rice"
+      },
+      "minRolls": 1,
+      "maxRolls": 1
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "guttaco_rice:rice"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "guttaco_rice:rice_seeds"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}

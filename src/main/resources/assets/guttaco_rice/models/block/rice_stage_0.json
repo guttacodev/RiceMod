@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "guttaco_rice:block/rice_stage_0"
+  }
+}
