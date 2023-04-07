@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "guttaco_rice:blocks/rice_stage_2",
+    "particle": "guttaco_rice:blocks/rice_stage_2"
+  }
+}
