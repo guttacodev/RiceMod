@@ -24,8 +24,16 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.COOKED_RICE)));
 
     public static final RegistryObject<Item> BOWL_OF_RICE = ITEMS.register("bowl_of_rice",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.BOWL_OF_RICE)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.BOWL_OF_RICE).stacksTo(1)));
 
+    public static final RegistryObject<Item> KELP_BOWL = ITEMS.register("kelp_bowl",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB)));
+
+    public static final RegistryObject<Item> DRIED_KELP_BOWL = ITEMS.register("dried_kelp_bowl",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.DRIED_KELP_BOWL)));
+
+    public static final RegistryObject<Item> DRIED_KELP_BOWL_OF_RICE = ITEMS.register("dried_kelp_bowl_of_rice",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.DRIED_KELP_BOWL_OF_RICE)));
 
     public static void  register(IEventBus eventBus) {
         ITEMS.register(eventBus);
