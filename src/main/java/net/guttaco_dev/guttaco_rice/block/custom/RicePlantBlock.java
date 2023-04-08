@@ -33,7 +33,7 @@ public class RicePlantBlock extends CropBlock {
 
     @Override
     public int getMaxAge() {
-        return 3;
+        return MAX_AGE;
     }
 
     @Override

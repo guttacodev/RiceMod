@@ -24,7 +24,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.COOKED_RICE)));
 
     public static final RegistryObject<Item> BOWL_OF_RICE = ITEMS.register("bowl_of_rice",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.BOWL_OF_RICE).stacksTo(1)));
+            () -> new StackedBowlItem(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.BOWL_OF_RICE).stacksTo(16)));
 
     public static final RegistryObject<Item> KELP_BOWL = ITEMS.register("kelp_bowl",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB)));
