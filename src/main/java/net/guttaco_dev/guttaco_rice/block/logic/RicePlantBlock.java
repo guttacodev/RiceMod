@@ -1,4 +1,4 @@
-package net.guttaco_dev.guttaco_rice.block.custom;
+package net.guttaco_dev.guttaco_rice.block.logic;
 
 import net.guttaco_dev.guttaco_rice.item.ModItems;
 import net.minecraft.core.BlockPos;

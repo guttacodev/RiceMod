@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "guttaco_rice:item/dried_kelp_bowl"
+    "layer0": "guttaco_rice:item/bowl_of_rice_cod"
   }
 }

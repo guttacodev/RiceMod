@@ -1,5 +1,6 @@
-package net.guttaco_dev.guttaco_rice.item;
+package net.guttaco_dev.guttaco_rice.logic;
 
+import net.guttaco_dev.guttaco_rice.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 

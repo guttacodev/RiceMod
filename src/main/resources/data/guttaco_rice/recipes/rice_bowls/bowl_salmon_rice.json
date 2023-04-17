@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "guttaco_rice:bowl_of_rice"
+    },
+    {
+      "item": "minecraft:cooked_salmon"
+    }
+  ],
+  "result": {
+    "item": "guttaco_rice:bowl_of_rice_salmon"
+  }
+}

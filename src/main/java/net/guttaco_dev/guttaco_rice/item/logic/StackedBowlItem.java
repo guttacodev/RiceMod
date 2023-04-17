@@ -1,4 +1,4 @@
-package net.guttaco_dev.guttaco_rice.item;
+package net.guttaco_dev.guttaco_rice.item.logic;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;

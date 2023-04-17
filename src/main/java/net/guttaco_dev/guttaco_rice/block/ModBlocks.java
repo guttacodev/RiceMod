@@ -1,7 +1,7 @@
 package net.guttaco_dev.guttaco_rice.block;
 
 import net.guttaco_dev.guttaco_rice.RiceMod;
-import net.guttaco_dev.guttaco_rice.block.custom.RicePlantBlock;
+import net.guttaco_dev.guttaco_rice.block.logic.RicePlantBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BushBlock;

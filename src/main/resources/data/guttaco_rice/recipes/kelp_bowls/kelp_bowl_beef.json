@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "guttaco_rice:dried_kelp_bowl"
+    },
+    {
+      "item": "guttaco_rice:cooked_rice"
+    },
+    {
+      "item": "guttaco_rice:cooked_rice"
+    },
+    {
+      "item": "minecraft:cooked_beef"
+    }
+  ],
+  "result": {
+    "item": "guttaco_rice:dried_kelp_bowl_of_rice_beef"
+  }
+}
