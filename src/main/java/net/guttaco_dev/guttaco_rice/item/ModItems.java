@@ -2,6 +2,7 @@ package net.guttaco_dev.guttaco_rice.item;
 
 import net.guttaco_dev.guttaco_rice.RiceMod;
 import net.guttaco_dev.guttaco_rice.block.ModBlocks;
+import net.guttaco_dev.guttaco_rice.item.logic.InfiniteFoodItem;
 import net.guttaco_dev.guttaco_rice.logic.ModCreativeModeTab;
 import net.guttaco_dev.guttaco_rice.item.logic.ModFoods;
 import net.guttaco_dev.guttaco_rice.item.logic.StackedBowlItem;
@@ -69,6 +70,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> DRIED_KELP_BOWL_OF_RICE_CHICKEN = ITEMS.register("dried_kelp_bowl_of_rice_chicken",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.DRIED_KELP_BOWL_OF_RICE_CHICKEN)));
+
+    public static final RegistryObject<Item> INFINITE_BOWL_OF_RICE = ITEMS.register("infinite_bowl_of_rice",
+            () -> new InfiniteFoodItem(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.INFINITE_BOWL_OF_RICE).stacksTo(1)));
 
     public static void  register(IEventBus eventBus) {
         ITEMS.register(eventBus);
