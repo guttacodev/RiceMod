@@ -38,6 +38,7 @@ public class ShulkerBentoBoxItem extends Item {
                 int remainingNutrition = tag.getInt("guttaco_rice.nutrition");
                 foodData.eat(nutrition, pStack.getFoodProperties(pLivingEntity).getSaturationModifier());
                 tag.putInt("guttaco_rice.nutrition", remainingNutrition - nutrition);
+                updateModelData(pStack);
             }
         }
 
@@ -52,6 +53,16 @@ public class ShulkerBentoBoxItem extends Item {
         return Math.min(hunger, remainingNutrition);
     }
 
+    public void updateModelData(ItemStack pStack) {
+        CompoundTag tag = pStack.getOrCreateTag();
+        int fillLevel = (int) Math.ceil(4.0F / MAX_NUTRITION * tag.getInt("guttaco_rice.nutrition"));
+        if (fillLevel == 0) {
+            tag.remove("CustomModelData");
+        } else {
+            tag.putInt("CustomModelData", fillLevel);
+        }
+    }
+
     @Override
     public boolean overrideOtherStackedOnMe(ItemStack pStack, ItemStack pOther, Slot pSlot, ClickAction pAction, Player pPlayer, SlotAccess pAccess) {
         if (pOther.getItem() == ModItems.COOKED_RICE.get()) {
@@ -62,6 +73,7 @@ public class ShulkerBentoBoxItem extends Item {
             int riceNutrition = pOther.getFoodProperties(pPlayer).getNutrition();
             tag.putInt("guttaco_rice.nutrition", remainingNutrition + riceAmountToAdd * riceNutrition);
             pOther.shrink(riceAmountToAdd);
+            updateModelData(pStack);
             return true;
         }
         return false;
