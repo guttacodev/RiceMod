@@ -2,6 +2,7 @@ package net.guttaco_dev.guttaco_rice.item;
 
 import net.guttaco_dev.guttaco_rice.RiceMod;
 import net.guttaco_dev.guttaco_rice.block.ModBlocks;
+import net.guttaco_dev.guttaco_rice.item.logic.ShulkerBentoBoxItem;
 import net.guttaco_dev.guttaco_rice.logic.ModCreativeModeTab;
 import net.guttaco_dev.guttaco_rice.item.logic.ModFoods;
 import net.guttaco_dev.guttaco_rice.item.logic.StackedBowlItem;
@@ -25,6 +26,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> COOKED_RICE = ITEMS.register("cooked_rice",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.COOKED_RICE)));
+
+    public static final RegistryObject<Item> SHULKER_BENTO_BOX = ITEMS.register("shulker_bento_box",
+            () -> new ShulkerBentoBoxItem(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.SHULKER_BENTO_BOX).stacksTo(1)));
+
 
     public static final RegistryObject<Item> BOWL_OF_RICE = ITEMS.register("bowl_of_rice",
             () -> new StackedBowlItem(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.BOWL_OF_RICE).stacksTo(16)));
