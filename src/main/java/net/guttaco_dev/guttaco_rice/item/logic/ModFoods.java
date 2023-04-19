@@ -5,6 +5,7 @@ import net.minecraft.world.food.FoodProperties;
 public class ModFoods {
     public static final FoodProperties RICE = (new FoodProperties.Builder()).fast().nutrition(1).saturationMod(0F).build();
     public static final FoodProperties COOKED_RICE = (new FoodProperties.Builder()).fast().nutrition(2).saturationMod(0.4F).build();
+    public static final FoodProperties SHULKER_BENTO_BOX = (new FoodProperties.Builder()).nutrition(0).saturationMod(0.7F).build();
 
     public static final FoodProperties BOWL_OF_RICE = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.7F).build();
     public static final FoodProperties BOWL_OF_RICE_PORKCHOP = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.7F).build();

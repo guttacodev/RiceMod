@@ -2,7 +2,7 @@ package net.guttaco_dev.guttaco_rice.item;
 
 import net.guttaco_dev.guttaco_rice.RiceMod;
 import net.guttaco_dev.guttaco_rice.block.ModBlocks;
-import net.guttaco_dev.guttaco_rice.item.logic.InfiniteFoodItem;
+import net.guttaco_dev.guttaco_rice.item.logic.ShulkerBentoBoxItem;
 import net.guttaco_dev.guttaco_rice.logic.ModCreativeModeTab;
 import net.guttaco_dev.guttaco_rice.item.logic.ModFoods;
 import net.guttaco_dev.guttaco_rice.item.logic.StackedBowlItem;
@@ -26,6 +26,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> COOKED_RICE = ITEMS.register("cooked_rice",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.COOKED_RICE)));
+
+    public static final RegistryObject<Item> SHULKER_BENTO_BOX = ITEMS.register("shulker_bento_box",
+            () -> new ShulkerBentoBoxItem(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.SHULKER_BENTO_BOX).stacksTo(1)));
+
 
     public static final RegistryObject<Item> BOWL_OF_RICE = ITEMS.register("bowl_of_rice",
             () -> new StackedBowlItem(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.BOWL_OF_RICE).stacksTo(16)));
@@ -70,9 +74,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> DRIED_KELP_BOWL_OF_RICE_CHICKEN = ITEMS.register("dried_kelp_bowl_of_rice_chicken",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.DRIED_KELP_BOWL_OF_RICE_CHICKEN)));
-
-    public static final RegistryObject<Item> INFINITE_BOWL_OF_RICE = ITEMS.register("infinite_bowl_of_rice",
-            () -> new InfiniteFoodItem(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.INFINITE_BOWL_OF_RICE).stacksTo(1)));
 
     public static void  register(IEventBus eventBus) {
         ITEMS.register(eventBus);
