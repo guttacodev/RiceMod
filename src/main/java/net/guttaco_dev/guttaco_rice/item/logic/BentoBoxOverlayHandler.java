@@ -28,7 +28,7 @@ public class BentoBoxOverlayHandler {
 
         @Override
         public int getHeight() {
-            return 9;
+            return 12;
         }
 
         @Override
@@ -49,6 +49,7 @@ public class BentoBoxOverlayHandler {
             GuiComponent.blit(pPoseStack, offsetX, offsetY, pBlitOffset, 52, 27, 9, 9, 256, 256);
 
             offsetX += 12;
+            offsetY += 1;
             pPoseStack.translate(offsetX, offsetY, pBlitOffset);
             pFont.drawShadow(pPoseStack, bentoBoxTooltip.getNutritionString(), 0, 0, 0xFFFF55FF);
             pPoseStack.popPose();
