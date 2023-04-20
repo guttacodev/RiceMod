@@ -1,0 +1,5 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "guttaco_rice:item/shulker_bento_box/bento_box2"}
+}

@@ -1,6 +1,32 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "guttaco_rice:item/cooked_rice"
-  }
+    "layer0": "guttaco_rice:item/shulker_bento_box/bento_box0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "guttaco_rice:item/shulker_bento_box/bento_box1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "guttaco_rice:item/shulker_bento_box/bento_box2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "guttaco_rice:item/shulker_bento_box/bento_box3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "guttaco_rice:item/shulker_bento_box/bento_box4"
+    }
+  ]
 }

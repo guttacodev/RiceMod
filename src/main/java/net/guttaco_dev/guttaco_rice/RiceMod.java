@@ -19,14 +19,12 @@ import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(RiceMod.MOD_ID)
-public class RiceMod
-{
+public class RiceMod {
     public static final String MOD_ID = "guttaco_rice";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public RiceMod()
-    {
+    public RiceMod() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
@@ -48,7 +46,7 @@ public class RiceMod
         }
     }
 
-    private void setup(final FMLCommonSetupEvent event)
-    {
+    private void setup(final FMLCommonSetupEvent event) {
     }
+
 }
