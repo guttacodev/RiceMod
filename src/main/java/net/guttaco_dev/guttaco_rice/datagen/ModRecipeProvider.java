@@ -20,6 +20,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+
         //Wooden Rice Bowls
         ShapelessRecipeBuilder.shapeless(ModItems.BOWL_OF_RICE.get())
                 .requires(ModItems.COOKED_RICE
@@ -118,6 +119,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_cooked_salmon", has(Items.COOKED_SALMON))
                 .unlockedBy("bowl_of_rice", has(ModItems.BOWL_OF_RICE.get()))
                 .save(pFinishedRecipeConsumer, "bowl_of_rice_salmon_from_bowl");
+
 
         //Dried Kelp Bowls
         ShapelessRecipeBuilder.shapeless(ModItems.DRIED_KELP_BOWL_OF_RICE.get())
