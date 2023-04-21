@@ -216,14 +216,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pFinishedRecipeConsumer, "dried_kelp_bowl_of_rice_salmon_from_bowl");
 
         //Others
-        ShapedRecipeBuilder.shaped(ModItems.SHULKER_BENTO_BOX.get())
-                .define('a', Items.SHULKER_SHELL)
-                .define('b', ModItems.COOKED_RICE.get())
-                .pattern(" a ").pattern(" b ")
-                .pattern(" a ")
-                .unlockedBy("has_shulker_shell", has(Items.SHULKER_SHELL))
-                .save(pFinishedRecipeConsumer);
-
         ShapedRecipeBuilder.shaped(ModItems.KELP_BOWL.get())
                 .define('a', Items.KELP)
                 .pattern("a a")
