@@ -17,6 +17,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, RiceMod.MOD_ID);
 
+    // Items
     public static final RegistryObject<Item> RICE_SEEDS = ITEMS.register("rice_seeds",
             () -> new ItemNameBlockItem(ModBlocks.RICE_PLANT.get(),
                     new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB)));
@@ -30,7 +31,7 @@ public class ModItems {
     public static final RegistryObject<Item> SHULKER_BENTO_BOX = ITEMS.register("shulker_bento_box",
             () -> new ShulkerBentoBoxItem(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.SHULKER_BENTO_BOX).stacksTo(1)));
 
-
+    // Bowls
     public static final RegistryObject<Item> BOWL_OF_RICE = ITEMS.register("bowl_of_rice",
             () -> new StackedBowlItem(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.BOWL_OF_RICE).stacksTo(16)));
 
@@ -52,8 +53,7 @@ public class ModItems {
     public static final RegistryObject<Item> BOWL_OF_RICE_MUTTON = ITEMS.register("bowl_of_rice_mutton",
             () -> new StackedBowlItem(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.BOWL_OF_RICE_MUTTON).stacksTo(16)));
 
-
-
+    // Kelp Bowls
     public static final RegistryObject<Item> KELP_BOWL = ITEMS.register("kelp_bowl",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB)));
 
