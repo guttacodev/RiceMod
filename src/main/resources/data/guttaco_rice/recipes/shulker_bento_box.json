@@ -14,6 +14,9 @@
     }
   },
   "result": {
-    "item": "guttaco_rice:shulker_bento_box"
+    "item": "guttaco_rice:shulker_bento_box",
+    "nbt": {
+      "guttaco_rice.nutrition": 2
+    }
   }
 }
