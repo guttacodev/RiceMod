@@ -2,10 +2,10 @@ package net.guttaco_dev.guttaco_rice.item;
 
 import net.guttaco_dev.guttaco_rice.RiceMod;
 import net.guttaco_dev.guttaco_rice.block.ModBlocks;
-import net.guttaco_dev.guttaco_rice.item.logic.ShulkerBentoBoxItem;
-import net.guttaco_dev.guttaco_rice.logic.ModCreativeModeTab;
 import net.guttaco_dev.guttaco_rice.item.logic.ModFoods;
+import net.guttaco_dev.guttaco_rice.item.logic.ShulkerBentoBoxItem;
 import net.guttaco_dev.guttaco_rice.item.logic.StackedBowlItem;
+import net.guttaco_dev.guttaco_rice.logic.ModCreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -49,6 +49,9 @@ public class ModItems {
     public static final RegistryObject<Item> BOWL_OF_RICE_CHICKEN = ITEMS.register("bowl_of_rice_chicken",
             () -> new StackedBowlItem(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.BOWL_OF_RICE_CHICKEN).stacksTo(16)));
 
+    public static final RegistryObject<Item> BOWL_OF_RICE_MUTTON = ITEMS.register("bowl_of_rice_mutton",
+            () -> new StackedBowlItem(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.BOWL_OF_RICE_MUTTON).stacksTo(16)));
+
 
 
     public static final RegistryObject<Item> KELP_BOWL = ITEMS.register("kelp_bowl",
@@ -74,6 +77,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> DRIED_KELP_BOWL_OF_RICE_CHICKEN = ITEMS.register("dried_kelp_bowl_of_rice_chicken",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.DRIED_KELP_BOWL_OF_RICE_CHICKEN)));
+
+    public static final RegistryObject<Item> DRIED_KELP_BOWL_OF_RICE_MUTTON = ITEMS.register("dried_kelp_bowl_of_rice_mutton",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RICEMOD_TAB).food(ModFoods.DRIED_KELP_BOWL_OF_RICE_MUTTON)));
 
     public static void  register(IEventBus eventBus) {
         ITEMS.register(eventBus);

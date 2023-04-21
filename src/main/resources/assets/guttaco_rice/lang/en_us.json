@@ -3,13 +3,15 @@
   "item.guttaco_rice.rice": "Rice",
   "item.guttaco_rice.cooked_rice": "Cooked Rice",
   "item.guttaco_rice.shulker_bento_box": "Shulker Bento Box",
+
+
   "item.guttaco_rice.bowl_of_rice": "Bowl of Rice",
   "item.guttaco_rice.bowl_of_rice_beef": "Bowl of Rice & Beef",
   "item.guttaco_rice.bowl_of_rice_porkchop": "Bowl of Rice & Porkchop",
   "item.guttaco_rice.bowl_of_rice_chicken": "Bowl of Rice & Chicken",
+  "item.guttaco_rice.bowl_of_rice_mutton": "Bowl of Rice & Mutton",
   "item.guttaco_rice.bowl_of_rice_cod": "Bowl of Rice & Cod",
   "item.guttaco_rice.bowl_of_rice_salmon": "Bowl of Rice & Salmon",
-
 
 
   "item.guttaco_rice.kelp_bowl": "Kelp Bowl",
@@ -18,6 +20,7 @@
   "item.guttaco_rice.dried_kelp_bowl_of_rice_beef": "Kelp Bowl with Rice & Beef",
   "item.guttaco_rice.dried_kelp_bowl_of_rice_porkchop": "Kelp Bowl with Rice & Porkchop",
   "item.guttaco_rice.dried_kelp_bowl_of_rice_chicken": "Kelp Bowl with Rice & Chicken",
+  "item.guttaco_rice.dried_kelp_bowl_of_rice_mutton": "Kelp Bowl with Rice & Mutton",
   "item.guttaco_rice.dried_kelp_bowl_of_rice_cod": "Kelp Bowl with Rice & Cod",
   "item.guttaco_rice.dried_kelp_bowl_of_rice_salmon": "Kelp Bowl with Rice & Salmon",
 

@@ -13,6 +13,7 @@ public class ModFoods {
     public static final FoodProperties BOWL_OF_RICE_COD = (new FoodProperties.Builder()).nutrition(9).saturationMod(0.7F).build();
     public static final FoodProperties BOWL_OF_RICE_SALMON = (new FoodProperties.Builder()).nutrition(10).saturationMod(0.7F).build();
     public static final FoodProperties BOWL_OF_RICE_CHICKEN = (new FoodProperties.Builder()).nutrition(10).saturationMod(0.7F).build();
+    public static final FoodProperties BOWL_OF_RICE_MUTTON = (new FoodProperties.Builder()).nutrition(10).saturationMod(0.7F).build();
 
     public static final FoodProperties DRIED_KELP_BOWL = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.5F).build();
     public static final FoodProperties DRIED_KELP_BOWL_OF_RICE = (new FoodProperties.Builder()).nutrition(6).saturationMod(0.8F).build();
@@ -21,5 +22,5 @@ public class ModFoods {
     public static final FoodProperties DRIED_KELP_BOWL_OF_RICE_COD = (new FoodProperties.Builder()).nutrition(11).saturationMod(0.8F).build();
     public static final FoodProperties DRIED_KELP_BOWL_OF_RICE_SALMON = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.8F).build();
     public static final FoodProperties DRIED_KELP_BOWL_OF_RICE_CHICKEN = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.8F).build();
-    public static final FoodProperties INFINITE_BOWL_OF_RICE = (new FoodProperties.Builder()).nutrition(20).saturationMod(0.7F).build();
+    public static final FoodProperties DRIED_KELP_BOWL_OF_RICE_MUTTON = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.8F).build();
 }

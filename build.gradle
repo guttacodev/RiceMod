@@ -20,7 +20,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 
-version = '1.2.0-1.18.2'
+version = '1.3.0-1.18.2'
 group = 'net.guttaco_dev.guttaco_rice' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'guttaco_rice'
 
@@ -172,7 +172,7 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
     compileOnly fg.deobf("squeek.appleskin:appleskin-forge:mc1.18.2-2.4.1:api")
-    runtimeOnly fg.deobf("squeek.appleskin:appleskin-forge:mc1.18.2-2.4.1")
+//    runtimeOnly fg.deobf("squeek.appleskin:appleskin-forge:mc1.18.2-2.4.1")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
