@@ -23,8 +23,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //Wooden Rice Bowls
         ShapelessRecipeBuilder.shapeless(ModItems.BOWL_OF_RICE.get())
-                .requires(ModItems.COOKED_RICE
-                        .get(), 2).requires(Items.BOWL)
+                .requires(ModItems.COOKED_RICE.get(), 2).requires(Items.BOWL)
                 .unlockedBy("has_cooked_rice", has(ModItems.COOKED_RICE.get()))
                 .unlockedBy("has_bowl", has(Items.BOWL))
                 .save(pFinishedRecipeConsumer);

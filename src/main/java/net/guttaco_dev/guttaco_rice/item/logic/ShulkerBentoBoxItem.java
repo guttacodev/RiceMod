@@ -58,6 +58,11 @@ public class ShulkerBentoBoxItem extends Item {
     }
 
     @Override
+    public void onCraftedBy(ItemStack pStack, Level pLevel, Player pPlayer) {
+        super.onCraftedBy(pStack, pLevel, pPlayer);
+    }
+
+    @Override
     public boolean overrideOtherStackedOnMe(ItemStack pStack, ItemStack pOther, Slot pSlot, ClickAction pAction, Player pPlayer, SlotAccess pAccess) {
         if (pOther.getItem() == ModItems.COOKED_RICE.get()) {
             CompoundTag tag = pStack.getOrCreateTag();
