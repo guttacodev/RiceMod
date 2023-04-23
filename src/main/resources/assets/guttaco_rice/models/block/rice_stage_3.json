@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/cross",
+  "render_type": "minecraft:cutout",
   "textures": {
     "cross": "guttaco_rice:block/rice_stage_3"
   }

@@ -1,0 +1,5 @@
+{
+  "type": "guttaco_rice:vegetal",
+  "biomes": "#forge:is_swamp",
+  "feature": "guttaco_rice:wild_rice_placed"
+}

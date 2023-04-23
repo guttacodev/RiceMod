@@ -14,29 +14,27 @@ import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConf
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.material.Fluids;
 
-import java.util.List;
-
 public class ModConfiguredFeatures {
     public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> WILD_RICE_SPAWN =
         FeatureUtils.register("wild_rice_spawn", Feature.RANDOM_PATCH,
-                new RandomPatchConfiguration(
-                        20,
-                        4,
-                        0,
-                        PlacementUtils.filtered(
-                                Feature.SIMPLE_BLOCK,
-                                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WILD_RICE.get())),
-                                BlockPredicate.allOf(
-                                        BlockPredicate.matchesBlock(Blocks.AIR, BlockPos.ZERO),
-                                        BlockPredicate.matchesBlock(Blocks.GRASS_BLOCK, new BlockPos(0, -1, 0)),
-                                        BlockPredicate.anyOf(
-                                                BlockPredicate.matchesFluids(List.of(Fluids.WATER, Fluids.FLOWING_WATER),new BlockPos(1, -1, 0)),
-                                                BlockPredicate.matchesFluids(List.of(Fluids.WATER, Fluids.FLOWING_WATER), new BlockPos(-1, -1, 0)),
-                                                BlockPredicate.matchesFluids(List.of(Fluids.WATER, Fluids.FLOWING_WATER), new BlockPos(0, -1, 1)),
-                                                BlockPredicate.matchesFluids(List.of(Fluids.WATER, Fluids.FLOWING_WATER), new BlockPos(0, -1, -1))
-                                        )
-                                )
+            new RandomPatchConfiguration(
+                20,
+                4,
+                0,
+                PlacementUtils.filtered(
+                    Feature.SIMPLE_BLOCK,
+                    new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WILD_RICE.get())),
+                    BlockPredicate.allOf(
+                        BlockPredicate.matchesBlocks(Blocks.AIR),
+                        BlockPredicate.matchesBlocks(new BlockPos(0, -1, 0), Blocks.GRASS_BLOCK),
+                        BlockPredicate.anyOf(
+                            BlockPredicate.matchesFluids(new BlockPos(1, -1, 0), Fluids.WATER, Fluids.FLOWING_WATER),
+                            BlockPredicate.matchesFluids(new BlockPos(-1, -1, 0), Fluids.WATER, Fluids.FLOWING_WATER),
+                            BlockPredicate.matchesFluids(new BlockPos(0, -1, 1), Fluids.WATER, Fluids.FLOWING_WATER),
+                            BlockPredicate.matchesFluids(new BlockPos(0, -1, -1), Fluids.WATER, Fluids.FLOWING_WATER)
                         )
+                    )
                 )
+            )
         );
 }

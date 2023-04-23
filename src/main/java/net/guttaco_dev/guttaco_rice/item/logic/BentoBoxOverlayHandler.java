@@ -8,11 +8,12 @@ import net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent
 import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.world.inventory.tooltip.TooltipComponent;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.client.MinecraftForgeClient;
+import net.minecraftforge.client.event.RegisterClientTooltipComponentFactoriesEvent;
 
 public class BentoBoxOverlayHandler {
-    public static void init() {
-        MinecraftForgeClient.registerTooltipComponentFactory(BentoBoxTooltip.class, BentoBoxTooltipRenderer::new);
+    public static void register(RegisterClientTooltipComponentFactoriesEvent event)
+    {
+        event.register(BentoBoxTooltip.class, BentoBoxTooltipRenderer::new);
     }
 
     static class BentoBoxTooltipRenderer implements ClientTooltipComponent

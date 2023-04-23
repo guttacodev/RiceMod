@@ -2,7 +2,12 @@ package net.guttaco_dev.guttaco_rice;
 
 import com.mojang.logging.LogUtils;
 import net.guttaco_dev.guttaco_rice.block.ModBlocks;
+import net.guttaco_dev.guttaco_rice.integration.AppleSkinEventHandler;
 import net.guttaco_dev.guttaco_rice.item.ModItems;
+import net.guttaco_dev.guttaco_rice.item.logic.BentoBoxOverlayHandler;
+import net.guttaco_dev.guttaco_rice.world.biomemods.ModBiomeModifier;
+import net.guttaco_dev.guttaco_rice.world.feature.ModPlacedFeatures;
+import net.minecraftforge.client.event.RegisterClientTooltipComponentFactoriesEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -23,7 +28,8 @@ public class RiceMod {
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
-
+        ModBiomeModifier.register(eventBus);
+        ModPlacedFeatures.register(eventBus);
         eventBus.addListener(this::setup);
 
         // Register ourselves for server and other game events we are interested in
