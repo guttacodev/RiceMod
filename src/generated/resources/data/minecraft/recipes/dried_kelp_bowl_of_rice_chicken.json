@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "guttaco_rice:cooked_rice"
+    },
+    {
+      "item": "guttaco_rice:cooked_rice"
+    },
+    {
+      "item": "guttaco_rice:dried_kelp_bowl"
+    },
+    {
+      "item": "minecraft:cooked_chicken"
+    }
+  ],
+  "result": {
+    "item": "guttaco_rice:dried_kelp_bowl_of_rice_chicken"
+  }
+}

@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "guttaco_rice:blocks/rice_stage_3"
-  }
-}

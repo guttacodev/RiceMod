@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " a ",
+    " b ",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:shulker_shell"
+    },
+    "b": {
+      "item": "guttaco_rice:cooked_rice"
+    }
+  },
+  "result": {
+    "item": "guttaco_rice:shulker_bento_box",
+    "nbt": {
+      "guttaco_rice.nutrition": 2,
+      "CustomModelData": 1
+    }
+  }
+}

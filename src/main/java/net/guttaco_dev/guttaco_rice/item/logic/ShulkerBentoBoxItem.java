@@ -78,10 +78,10 @@ public class ShulkerBentoBoxItem extends Item {
         return false;
     }
 
-    @Override
-    public Optional<TooltipComponent> getTooltipImage(ItemStack pStack) {
-        return Optional.of(new BentoBoxOverlayHandler.BentoBoxTooltip(pStack));
-    }
+//    @Override
+//    public Optional<TooltipComponent> getTooltipImage(ItemStack pStack) {
+//        return Optional.of(new BentoBoxOverlayHandler.BentoBoxTooltip(pStack));
+//    }
 
     public String getNutritionString(ItemStack pStack) {
         CompoundTag tag = pStack.getOrCreateTag();

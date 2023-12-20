@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cooked_chicken": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cooked_chicken"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_dried_kelp_bowl_of_rice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "guttaco_rice:dried_kelp_bowl_of_rice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:dried_kelp_bowl_of_rice_chicken_from_bowl"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cooked_chicken",
+      "has_dried_kelp_bowl_of_rice",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:dried_kelp_bowl_of_rice_chicken_from_bowl"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "bowl_of_rice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "guttaco_rice:bowl_of_rice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_cooked_mutton": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cooked_mutton"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:bowl_of_rice_mutton_from_bowl"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cooked_mutton",
+      "bowl_of_rice",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:bowl_of_rice_mutton_from_bowl"
+    ]
+  },
+  "sends_telemetry_event": false
+}

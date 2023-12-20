@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:kelp"
+    }
+  },
+  "pattern": [
+    "a a",
+    " a "
+  ],
+  "result": {
+    "item": "guttaco_rice:kelp_bowl"
+  },
+  "show_notification": true
+}
