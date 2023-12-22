@@ -16,7 +16,7 @@ public class ModCreativeModTab {
 
     public static final RegistryObject<CreativeModeTab> TUTORIAL_TAB = CREATIVE_MODE_TABS.register("tutorial_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RICE.get()))
-                    .title(Component.translatable("creativetab.guttaco-rice_tab"))
+                    .title(Component.translatable("creativetab.guttaco_rice_mod"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.RICE_SEEDS.get());
                         pOutput.accept(ModItems.RICE.get());

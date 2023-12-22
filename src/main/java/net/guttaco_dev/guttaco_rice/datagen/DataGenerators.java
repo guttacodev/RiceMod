@@ -24,5 +24,6 @@ public class DataGenerators {
 
         generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
         generator.addProvider(event.includeServer(), new ModGlobalLootModifiersProvider(packOutput));
+        generator.addProvider(event.includeServer(), new ModTagsProvider(packOutput, event.getLookupProvider(), RiceMod.MOD_ID, existingFileHelper));
     }
 }

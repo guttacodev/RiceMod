@@ -23,4 +23,5 @@ public class ModFoods {
     public static final FoodProperties DRIED_KELP_BOWL_OF_RICE_SALMON = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.8F).build();
     public static final FoodProperties DRIED_KELP_BOWL_OF_RICE_CHICKEN = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.8F).build();
     public static final FoodProperties DRIED_KELP_BOWL_OF_RICE_MUTTON = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.8F).build();
+    public static final FoodProperties DRIED_KELP_BOWL_OF_RICE_RAT = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.8F).build();
 }

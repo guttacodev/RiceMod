@@ -22,11 +22,7 @@ public class ModBlocks {
     }
 
     public static final RegistryObject<Block> RICE_PLANT = registerBlockWithoutBlockItem("rice_plant",
-            () -> new RicePlantBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noOcclusion()));
-
-    public static final RegistryObject<Block> WILD_RICE = registerBlockWithoutBlockItem("wild_rice",
-            () -> new BushBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noOcclusion()));
-
+            () -> new RicePlantBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noOcclusion().noCollission()));
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }

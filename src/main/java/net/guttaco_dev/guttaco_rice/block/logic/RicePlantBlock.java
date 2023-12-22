@@ -13,10 +13,10 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 
 public class RicePlantBlock extends CropBlock {
 //    public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
-    public static final int MAX_AGE = 3;
     public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
@@ -25,19 +25,24 @@ public class RicePlantBlock extends CropBlock {
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D)};
 
     public RicePlantBlock(Properties pProperties) {
+
         super(pProperties);
     }
 
     @Override
-    public IntegerProperty getAgeProperty() {return AGE;}
+    public IntegerProperty getAgeProperty() {
+        return AGE;
+    }
 
     @Override
     public int getMaxAge() {
-        return MAX_AGE;
+
+        return 3;
     }
 
     @Override
     protected ItemLike getBaseSeedId() {
+
         return ModItems.RICE_SEEDS.get();
     }
 
@@ -47,10 +52,13 @@ public class RicePlantBlock extends CropBlock {
     }
 
     @Override
-    protected int getBonemealAgeIncrease(Level pLevel) {return super.getBonemealAgeIncrease(pLevel) / 3;}
+    protected int getBonemealAgeIncrease(Level pLevel) {
+        return super.getBonemealAgeIncrease(pLevel) / 3;
+    }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {pBuilder.add(AGE);
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+        pBuilder.add(AGE);
     }
 }
 
